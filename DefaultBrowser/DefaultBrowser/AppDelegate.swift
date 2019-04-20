@@ -29,6 +29,7 @@ private extension AppDelegate {
 
     var viewController: NSViewController? {
         let application = NSApplication.shared
-        return application.mainWindow?.contentViewController
+        let window = application.windows.first
+        return window?.contentViewController
     }
 }

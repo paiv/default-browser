@@ -3,6 +3,9 @@ Default Browser
 
 Take control over links opened by other apps, and pick a browser to open them.
 
+<img src="screenshot.png" width="240">
+
+
 Install
 --
 
