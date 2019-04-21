@@ -14,6 +14,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let manager = NSAppleEventManager.shared()
         manager.setEventHandler(self, andSelector: #selector(handleAppleEvent), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
     }
+    
+    func application(_ sender: NSApplication, openFiles filenames: [String]) {
+        guard let path = filenames.first
+            else { return }
+        let url = URL(fileURLWithPath: path)
+        viewController?.representedObject = url
+    }
 }
 
 
