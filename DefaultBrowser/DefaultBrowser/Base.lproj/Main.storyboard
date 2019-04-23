@@ -329,6 +329,9 @@
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rey-uS-F6F">
                                 <rect key="frame" x="393" y="135" width="73" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="YBD-3y-58Q"/>
+                                </constraints>
                                 <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VEt-Ss-sof">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -344,6 +347,7 @@ DQ
                                 <rect key="frame" x="8" y="8" width="464" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="4X5-Yc-2wY"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="480" id="9tG-xm-fmT"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="charWrapping" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="IEx-6r-Hen">
                                     <font key="font" usesAppearanceFont="YES"/>
@@ -370,6 +374,9 @@ DQ
                             </popUpButton>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4ej-W3-C9J">
                                 <rect key="frame" x="311" y="135" width="82" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="ceb-dq-gjU"/>
+                                </constraints>
                                 <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OgT-mz-pJT">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>

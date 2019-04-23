@@ -23,7 +23,6 @@
 		C403FCDE226B42C9006F6490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C403FCE1226B42C9006F6490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C403FCE3226B42C9006F6490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C403FCE4226B42C9006F6490 /* DefaultBrowser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DefaultBrowser.entitlements; sourceTree = "<group>"; };
 		C4F09EFB226BA03000B1A710 /* Browsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browsers.swift; sourceTree = "<group>"; };
 		C4F09EFD226BA12200B1A710 /* BrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
 		C4F09EFF226BADF800B1A710 /* Launcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launcher.swift; sourceTree = "<group>"; };
@@ -62,7 +61,6 @@
 				C403FCDA226B42C7006F6490 /* AppDelegate.swift */,
 				C403FCDE226B42C9006F6490 /* Assets.xcassets */,
 				C4F09EFA226BA01000B1A710 /* Browser */,
-				C403FCE4226B42C9006F6490 /* DefaultBrowser.entitlements */,
 				C403FCE3226B42C9006F6490 /* Info.plist */,
 				C403FCE0226B42C9006F6490 /* Main.storyboard */,
 			);
@@ -112,6 +110,11 @@
 				TargetAttributes = {
 					C403FCD6226B42C7006F6490 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -291,7 +294,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DefaultBrowser/DefaultBrowser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DefaultBrowser/Info.plist;
@@ -309,7 +311,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DefaultBrowser/DefaultBrowser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DefaultBrowser/Info.plist;

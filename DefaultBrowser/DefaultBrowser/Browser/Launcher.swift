@@ -10,35 +10,22 @@ import Cocoa
 class Launcher {
     
     func openUrl(_ url: URL, inBrowser browser: Browser) {
-        launch1(url, inBrowser: browser)
+        launch(browser, open: url)
     }
 }
 
 
 private extension Launcher {
 
-    func launch1(_ url: URL, inBrowser browser: Browser) {
-        let workspace = NSWorkspace.shared
+    func launch(_ browser: Browser, open url: URL) {
+        guard let bundle = Bundle(identifier: browser.bundleId),
+            let executable = bundle.executableURL
+            else { return }
         
-        workspace.open([url], withAppBundleIdentifier: browser.bundleId, options: .default, additionalEventParamDescriptor: nil, launchIdentifiers: nil)
-    }
-    
-    func launch2(_ url: URL, inBrowser browser: Browser) {
-        let workspace = NSWorkspace.shared
-        
-        do {
-            try workspace.open([url], withApplicationAt: browser.fileUrls.first!, options: .default, configuration: [.arguments : ["--incognito"]])
-        }
-        catch {
-            print(error)
-        }
-    }
-
-    func launch3(_ url: URL, inBrowser browser: Browser) {
         let task = Process()
-        task.executableURL = URL(fileURLWithPath: "/usr/bin/open")
-        task.arguments = ["-b", browser.bundleId, url.absoluteString, "--args", "--incognito"]
-
+        task.executableURL = executable
+        task.arguments = browser.arguments + [url.absoluteString]
+        
         do {
             try task.run()
         } catch {
