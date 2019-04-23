@@ -10,21 +10,36 @@ import Cocoa
 class Launcher {
     
     func openUrl(_ url: URL, inBrowser browser: Browser) {
-        launch(browser, open: url)
+        if browser.arguments.count > 0 {
+            processRunApplication(browser.executableUrl, arguments: browser.arguments, open: url)
+        }
+        else {
+            workspaceOpen(url, withApplicationAt: browser.executableUrl)
+        }
     }
 }
 
 
 private extension Launcher {
+    
+    func workspaceOpen(_ url: URL, withApplicationAt executableUrl: URL) {
+        let workspace = NSWorkspace.shared
+        do {
+            try workspace.open([url], withApplicationAt: executableUrl, configuration: [:])
+        }
+        catch {
+            print(error)
+        }
+    }
 
-    func launch(_ browser: Browser, open url: URL) {
-        guard let bundle = Bundle(identifier: browser.bundleId),
-            let executable = bundle.executableURL
+    func processRunApplication(_ application: URL, arguments: [String], open url: URL) {
+        guard let bundle = Bundle(url: application),
+            let executableUrl = bundle.executableURL
             else { return }
         
         let task = Process()
-        task.executableURL = executable
-        task.arguments = browser.arguments + [url.absoluteString]
+        task.executableURL = executableUrl
+        task.arguments = arguments + [url.absoluteString]
         
         do {
             try task.run()

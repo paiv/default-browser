@@ -80,7 +80,7 @@ private extension BrowserViewController {
         for (browser, item) in zip(browsers, items) {
             appsButton.menu?.addItem(item)
             
-            if browser.bundleId.lowercased() == selected?.bundleId.lowercased() {
+            if browser == selected {
                 appsButton.select(item)
             }
         }
