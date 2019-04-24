@@ -11,6 +11,9 @@
 		C403FCDD226B42C7006F6490 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403FCDC226B42C7006F6490 /* BrowserViewController.swift */; };
 		C403FCDF226B42C9006F6490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C403FCDE226B42C9006F6490 /* Assets.xcassets */; };
 		C403FCE2226B42C9006F6490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C403FCE0226B42C9006F6490 /* Main.storyboard */; };
+		C49C636D226FA85A00F656DE /* GoogleChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49C636C226FA85A00F656DE /* GoogleChrome.swift */; };
+		C49C636F226FA87500F656DE /* MozillaFirefox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49C636E226FA87500F656DE /* MozillaFirefox.swift */; };
+		C49C6371226FA8D700F656DE /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49C6370226FA8D700F656DE /* Emitter.swift */; };
 		C4F09EFC226BA03000B1A710 /* Browsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F09EFB226BA03000B1A710 /* Browsers.swift */; };
 		C4F09EFE226BA12200B1A710 /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F09EFD226BA12200B1A710 /* BrowserViewModel.swift */; };
 		C4F09F00226BADF800B1A710 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F09EFF226BADF800B1A710 /* Launcher.swift */; };
@@ -23,6 +26,9 @@
 		C403FCDE226B42C9006F6490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C403FCE1226B42C9006F6490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C403FCE3226B42C9006F6490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49C636C226FA85A00F656DE /* GoogleChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleChrome.swift; sourceTree = "<group>"; };
+		C49C636E226FA87500F656DE /* MozillaFirefox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MozillaFirefox.swift; sourceTree = "<group>"; };
+		C49C6370226FA8D700F656DE /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
 		C4F09EFB226BA03000B1A710 /* Browsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browsers.swift; sourceTree = "<group>"; };
 		C4F09EFD226BA12200B1A710 /* BrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
 		C4F09EFF226BADF800B1A710 /* Launcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launcher.swift; sourceTree = "<group>"; };
@@ -67,9 +73,20 @@
 			path = DefaultBrowser;
 			sourceTree = "<group>";
 		};
+		C49C636B226FA84700F656DE /* Browsers */ = {
+			isa = PBXGroup;
+			children = (
+				C49C6370226FA8D700F656DE /* Emitter.swift */,
+				C49C636C226FA85A00F656DE /* GoogleChrome.swift */,
+				C49C636E226FA87500F656DE /* MozillaFirefox.swift */,
+			);
+			path = Browsers;
+			sourceTree = "<group>";
+		};
 		C4F09EFA226BA01000B1A710 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
+				C49C636B226FA84700F656DE /* Browsers */,
 				C4F09EFB226BA03000B1A710 /* Browsers.swift */,
 				C403FCDC226B42C7006F6490 /* BrowserViewController.swift */,
 				C4F09EFD226BA12200B1A710 /* BrowserViewModel.swift */,
@@ -154,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C403FCDD226B42C7006F6490 /* BrowserViewController.swift in Sources */,
+				C49C636F226FA87500F656DE /* MozillaFirefox.swift in Sources */,
+				C49C6371226FA8D700F656DE /* Emitter.swift in Sources */,
 				C4F09EFE226BA12200B1A710 /* BrowserViewModel.swift in Sources */,
+				C49C636D226FA85A00F656DE /* GoogleChrome.swift in Sources */,
 				C4F09F00226BADF800B1A710 /* Launcher.swift in Sources */,
 				C403FCDB226B42C7006F6490 /* AppDelegate.swift in Sources */,
 				C4F09EFC226BA03000B1A710 /* Browsers.swift in Sources */,
