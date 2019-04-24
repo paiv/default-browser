@@ -20,6 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             else { return }
         let url = URL(fileURLWithPath: path)
         viewController?.representedObject = url
+        activateTheApp()
     }
 }
 
@@ -32,11 +33,20 @@ private extension AppDelegate {
             let url = URL(string: value)
             else { return }
         viewController?.representedObject = url
+        activateTheApp()
     }
 
     var viewController: NSViewController? {
         let application = NSApplication.shared
         let window = application.windows.first
         return window?.contentViewController
+    }
+    
+    func activateTheApp() {
+        let application = NSApplication.shared
+
+        if !application.isActive {
+            application.activate(ignoringOtherApps: true)
+        }
     }
 }
