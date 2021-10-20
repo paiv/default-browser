@@ -28,7 +28,7 @@ class BrowserViewModel {
 }
 
 
-protocol BrowserViewModelDelegate : class {
+protocol BrowserViewModelDelegate : AnyObject {
 
     func viewModel(_ viewModel: BrowserViewModel, didChangeUrl url: URL?)
 }
