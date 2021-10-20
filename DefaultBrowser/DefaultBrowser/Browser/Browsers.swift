@@ -29,6 +29,7 @@ extension Browser : Equatable {
 struct Browsers {
     
     private let emitters = Dictionary(uniqueKeysWithValues: ([
+        BraveBrowserEmitter(),
         GoogleChromeEmitter(),
         MozillaFirefoxEmitter(),
         ] as [Emitter]).map { ($0.bundleId, $0) })

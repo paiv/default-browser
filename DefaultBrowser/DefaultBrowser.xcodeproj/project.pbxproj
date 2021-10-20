@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A55C26632720201B00BB0E72 /* BraveBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55C26622720201B00BB0E72 /* BraveBrowser.swift */; };
 		C403FCDB226B42C7006F6490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403FCDA226B42C7006F6490 /* AppDelegate.swift */; };
 		C403FCDD226B42C7006F6490 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403FCDC226B42C7006F6490 /* BrowserViewController.swift */; };
 		C403FCDF226B42C9006F6490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C403FCDE226B42C9006F6490 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A55C26622720201B00BB0E72 /* BraveBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveBrowser.swift; sourceTree = "<group>"; };
 		C403FCD7226B42C7006F6490 /* DefaultBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C403FCDA226B42C7006F6490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C403FCDC226B42C7006F6490 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		C49C636B226FA84700F656DE /* Browsers */ = {
 			isa = PBXGroup;
 			children = (
+				A55C26622720201B00BB0E72 /* BraveBrowser.swift */,
 				C49C6370226FA8D700F656DE /* Emitter.swift */,
 				C49C636C226FA85A00F656DE /* GoogleChrome.swift */,
 				C49C636E226FA87500F656DE /* MozillaFirefox.swift */,
@@ -172,6 +175,7 @@
 			files = (
 				C403FCDD226B42C7006F6490 /* BrowserViewController.swift in Sources */,
 				C49C636F226FA87500F656DE /* MozillaFirefox.swift in Sources */,
+				A55C26632720201B00BB0E72 /* BraveBrowser.swift in Sources */,
 				C49C6371226FA8D700F656DE /* Emitter.swift in Sources */,
 				C4F09EFE226BA12200B1A710 /* BrowserViewModel.swift in Sources */,
 				C49C636D226FA85A00F656DE /* GoogleChrome.swift in Sources */,
