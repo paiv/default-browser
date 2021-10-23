@@ -20,9 +20,23 @@ class BrowserViewModel {
 
     var selectedBrowser: Browser?
     
+    private var _url: URL?
     var url: URL? {
-        didSet {
-            notifyDidChangeUrl(url)
+        get {
+            return _url
+        }
+        set {
+            _url = newValue
+            notifyDidChangeUrl(_url)
+        }
+    }
+    
+    var urlTextInput: String? {
+        get {
+            return _url?.absoluteString
+        }
+        set {
+            _url = newValue.flatMap { URL(string: $0) }
         }
     }
 }

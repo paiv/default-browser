@@ -60,7 +60,7 @@ extension BrowserViewController : BrowserViewModelDelegate {
 private extension BrowserViewController {
 
     func reloadModel() {
-        linkTextField.stringValue = viewModel.url?.absoluteString ?? ""
+        linkTextField.stringValue = viewModel.urlTextInput ?? ""
     }
     
     func reloadBrowsers() {
@@ -84,5 +84,13 @@ private extension BrowserViewController {
                 appsButton.select(item)
             }
         }
+    }
+}
+
+
+extension BrowserViewController : NSTextFieldDelegate {
+
+    func controlTextDidChange(_ obj: Notification) {
+        viewModel.urlTextInput = linkTextField.stringValue
     }
 }
