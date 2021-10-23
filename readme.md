@@ -1,7 +1,7 @@
 Default Browser
 ==
 
-Take control over links opened by other apps, and pick a browser to open them.
+You are in control which browser and in what window will open a desktop link.
 
 <img src="screenshot.png" width="240">
 

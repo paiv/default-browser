@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A55C26622720201B00BB0E72 /* BraveBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveBrowser.swift; sourceTree = "<group>"; };
-		C403FCD7226B42C7006F6490 /* DefaultBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C403FCD7226B42C7006F6490 /* Default Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Default Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C403FCDA226B42C7006F6490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C403FCDC226B42C7006F6490 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		C403FCDE226B42C9006F6490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		C403FCD8226B42C7006F6490 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C403FCD7226B42C7006F6490 /* DefaultBrowser.app */,
+				C403FCD7226B42C7006F6490 /* Default Browser.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C403FCD6226B42C7006F6490 /* DefaultBrowser */ = {
+		C403FCD6226B42C7006F6490 /* Default Browser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C403FCE7226B42C9006F6490 /* Build configuration list for PBXNativeTarget "DefaultBrowser" */;
+			buildConfigurationList = C403FCE7226B42C9006F6490 /* Build configuration list for PBXNativeTarget "Default Browser" */;
 			buildPhases = (
 				C403FCD3226B42C7006F6490 /* Sources */,
 				C403FCD4226B42C7006F6490 /* Frameworks */,
@@ -113,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = DefaultBrowser;
+			name = "Default Browser";
 			productName = DefaultBrowser;
-			productReference = C403FCD7226B42C7006F6490 /* DefaultBrowser.app */;
+			productReference = C403FCD7226B42C7006F6490 /* Default Browser.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +138,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C403FCD2226B42C7006F6490 /* Build configuration list for PBXProject "DefaultBrowser" */;
+			buildConfigurationList = C403FCD2226B42C7006F6490 /* Build configuration list for PBXProject "Default Browser" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C403FCD6226B42C7006F6490 /* DefaultBrowser */,
+				C403FCD6226B42C7006F6490 /* Default Browser */,
 			);
 		};
 /* End PBXProject section */
@@ -359,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C403FCD2226B42C7006F6490 /* Build configuration list for PBXProject "DefaultBrowser" */ = {
+		C403FCD2226B42C7006F6490 /* Build configuration list for PBXProject "Default Browser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C403FCE5226B42C9006F6490 /* Debug */,
@@ -368,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C403FCE7226B42C9006F6490 /* Build configuration list for PBXNativeTarget "DefaultBrowser" */ = {
+		C403FCE7226B42C9006F6490 /* Build configuration list for PBXNativeTarget "Default Browser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C403FCE8226B42C9006F6490 /* Debug */,

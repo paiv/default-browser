@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DefaultBrowser.xcodeproj">
+      location = "self:/Users/paiv/Workspace/default-browser/repo/Sources/Default Browser.xcodeproj">
    </FileRef>
 </Workspace>
